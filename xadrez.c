@@ -55,7 +55,7 @@ int main() {
             printf("Baixo\n");
             c++;
             }   for(c1 = 1; c1 <= 1; c1++){
-                    printf("Esquerda\n");
+                    printf("Esquerda\n\n");
             }
 
     // Nível Mestre - Funções Recursivas e Loops Aninhados
