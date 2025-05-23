@@ -62,8 +62,98 @@ int main() {
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
     // Exemplo: Crie uma função recursiva para o movimento do Bispo.
 
+            //função recursiva para o movimento do Bispo.
+# include <stdio.h>
+
+int main(){
+
+    printf("\n**** Bispo ****\n");
+
+    for(int b = 1; b <= 5; b++ ){
+        printf("Superior ");
+        for(int b1 = 1; b1 <= 1; b1++ ){
+            printf("Direita\n");
+        }
+    }
+
+    return 0;
+    
+}
+            //função aninhada para o movimento do Bispo.
+# include <stdio.h>
+
+int main(){
+
+    printf("\n**** Bispo ****\n");
+
+    for(int b = 1; b <= 5; b++ ){
+        printf("Superior ");
+        for(int b1 = 1; b1 <= 1; b1++ ){
+            printf("Direita\n");
+        }
+    }
+
+    return 0;
+    
+}
+            //função recursiva para o movimento do Rainha.
+# include <stdio.h>
+
+void Rainha(int r){
+
+    if(r > 0){
+        printf("Esquerda \n");
+        Rainha(r - 1);
+    }
+}
+
+int main(){
+
+    printf("\n**** Rainha ****\n");
+    Rainha(9);
+    
+}
+            //função recursiva para o movimento do Torre.
+#include <stdio.h>
+
+void Torre(int t){
+
+    if(t > 0){
+        printf("Direita \n");
+        Torre(t - 1);
+    }
+}
+
+int main(){
+
+    printf("\n**** Torre ****\n");
+    Torre(5);
+
+    return 0;
+}
+
+
     // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
     // Inclua o uso de continue e break dentro dos loops.
+# include <stdio.h>
+
+int main (){
+
+    int i, j;
+
+    printf("\n**** Cavalo ****\n");
+    
+    for(i = 0; i <= 4; i++){
+        if(i == 1) break; 
+            printf("Direita\n");
+        for(j = 0; j <= 3; j++){
+            if(j == 2) break;
+                printf("Cima\n");
+        }
+    }
+    return 0;
+}
+
 
     return 0;
 }
